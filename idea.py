@@ -60,13 +60,14 @@ class Idea:
             for idea in self.data[key]:
                 i += 1
                 paragraph = idea.split("  ")
+                print("")
                 print("-", paragraph[0])
                 try:
                     for j in range(1, len(paragraph)):
                         print(" ", paragraph[j])
                 except:
                     pass
-                if i == 20:
+                if i == 30:
                     return
 
     def help(self):
